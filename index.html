@@ -18,11 +18,12 @@
     <a id="warmup-target"></a>
   </body>
   <script>
-    !function(e,t,a,r,c){a=e.getElementById("warmup-target"),
-    (r=new URLSearchParams(e.location.search).get("d"))&&(t=t+"/"+r),
-    (c=e.createElement("iframe")).src=t,c.height="100%",c.width="100%",
-    c.frameBorder="0",a.parentElement.replaceChild(c,a)}
-    (document,"https://warmup.warmup-staging.com/advocate_referrals");
+    !function(e,t,n,a,m,r,o,c,i,l){n=e.getElementById("warmup-target"),
+  a=new URLSearchParams(e.location.search),m=e.createElement("iframe"),r=a.get("d"),
+  o=encodeURIComponent(a.get("firstname")),c=encodeURIComponent(a.get("lastname")),
+  i=encodeURIComponent(a.get("email"));l=r?t+"/"+r:t+"?firstname="+o+"&lastname="+c+"&email="+i,
+  m.src=l,m.height="100%",m.width="100%",m.frameBorder="0",n.parentElement.replaceChild(m,n)}
+  (document,"https://warmup.warmup-staging.com/advocate_referrals");
   </script>
 </html>
 
